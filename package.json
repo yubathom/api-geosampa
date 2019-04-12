@@ -9,7 +9,7 @@
   "scripts": {
     "docs:dev": "vuepress dev doc",
     "docs:build": "vuepress build doc",
-    "start": "node server.js",
+    "start": "vuepress build doc && node server.js",
     "dev": "nodemon server.js"
   },
   "author": "Thomas Yuba <yubathom@gmail.com>",
