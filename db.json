@@ -1,24 +1,24 @@
 {
 	"dados-abertos": {
 		"secoes": [
-			"http://localhost:3000/limites-administrativos",
-			"http://localhost:3000/arquivos"
+			"https://api-geosampa.herokuapp.com/limites-administrativos",
+			"https://api-geosampa.herokuapp.com/arquivos"
 		]
 	},
 	"limites-administrativos": {
 		"id": 1,
 		"descricao": "Meta descrição desta camada",
 		"secoes": [
-			"http://localhost:3000/limites-administrativos@regiao-5"
+			"https://api-geosampa.herokuapp.com/limites-administrativos@regiao-5"
 		]
 	},
 	"limites-administrativos@regiao-5": {
-		"SAD69": "http://localhost:3000/arquivos/0"
+		"SAD69": "https://api-geosampa.herokuapp.com/arquivos/0"
 	},
 	"arquivos": [
 		{
 		"id": 0,
-		"fonte": "http://localhost:3000/arquivos/0",
+		"fonte": "https://api-geosampa.herokuapp.com/arquivos/0",
 		"versao": "2016.05.v0.1.0",
 		"nome": "Limites Admnistrativos",
 		"secao": "Região 5",
