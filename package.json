@@ -1,21 +1,21 @@
 {
-  "name": "api-geosampa",
-  "version": "1.0.0",
-  "description": "Protótipo de API de arquivos estáticos do portal Geosampa.",
-  "main": "index.js",
-  "directories": {
-    "doc": "doc"
-  },
-  "scripts": {
-    "docs:dev": "vuepress dev doc",
-    "docs:build": "vuepress build doc",
-    "start": "vuepress build doc && node server.js",
-    "dev": "nodemon server.js"
-  },
-  "author": "Thomas Yuba <yubathom@gmail.com>",
-  "license": "GPL-3.0-or-later",
-  "dependencies": {
-    "vuepress": "^0.14.10",
-    "json-server": "^0.12.1"
-  }
+	"name": "api-geosampa",
+	"version": "1.0.0",
+	"description": "Protótipo de API de arquivos estáticos do portal Geosampa.",
+	"main": "index.js",
+	"directories": {
+		"doc": "doc"
+	},
+	"scripts": {
+		"docs:dev": "vuepress dev doc",
+		"docs:build": "vuepress build doc",
+		"start": "vuepress build doc && node server.js",
+		"dev": "nodemon server.js"
+	},
+	"author": "Thomas Yuba <yubathom@gmail.com>",
+	"license": "GPL-3.0-or-later",
+	"dependencies": {
+		"vuepress": "^0.14.10",
+		"json-server": "^0.12.1"
+	}
 }

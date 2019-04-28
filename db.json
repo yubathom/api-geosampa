@@ -1,16 +1,30 @@
 {
-  "posts":[
-    {
-      "id" : 0,
-      "title": "First post!",
-      "content" : "My first content!"
-    }
-  ],
-  "comments" : [
-    {
-      "id": 0,
-      "content": "Wow such content!",
-      "username": "zero_cool"
-    }
-  ]
+	"dados-abertos": {
+		"secoes": [
+			"http://localhost:3000/limites-administrativos",
+			"http://localhost:3000/arquivos"
+		]
+	},
+	"limites-administrativos": {
+		"id": 1,
+		"descricao": "Meta descrição desta camada",
+		"secoes": [
+			"http://localhost:3000/limites-administrativos@regiao-5"
+		]
+	},
+	"limites-administrativos@regiao-5": {
+		"SAD69": "http://localhost:3000/arquivos/0"
+	},
+	"arquivos": [
+		{
+		"id": 0,
+		"fonte": "http://localhost:3000/arquivos/0",
+		"versao": "2016.05.v0.1.0",
+		"nome": "Limites Admnistrativos",
+		"secao": "Região 5",
+		"autor": "PMSP",
+		"data": "2016-05-05",
+		"url": "https://s3-sa-east-1.amazonaws.com/api-geosampa/REGIAO5%402016.05.v0.1.0.zip"
+		}
+	]
 }
