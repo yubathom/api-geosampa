@@ -1,30 +1,282 @@
 {
 	"dados-abertos": {
-		"secoes": [
+		"Sobre esta API": "Este é um protótipo de api do portal Geosampa - http://geosampa.prefeitura.sp.gov.br/ - uma proposta feita para a hackatona do portal - https://mundogeoconnect.com/2019/geosampa. Veja o repositório deste projeto: https://github.com/yubathom/api-geosampa",
+		"endpoints": [
 			"http://localhost:3000/limites-administrativos",
 			"http://localhost:3000/arquivos"
+		],
+		"conjuntos pendentes": [
+			"/"
 		]
 	},
 	"limites-administrativos": {
 		"id": 1,
-		"descricao": "Meta descrição desta camada",
-		"secoes": [
-			"http://localhost:3000/limites-administrativos@regiao-5"
+		"Resumo": "Mapa base da divisão político-administrativa do Município de São Paulo, contendo prefeituras regionais, distritos, eixos de logradouros, quadras viárias e hidrografia do Mapa Digital da Cidade de São Paulo - MDC.",
+		"Escala": "1:1.000",
+		"Data de referencia":"2014",
+		"Responsável": {
+			"Nome": "Secretaria Municipal de Desenvolvimento Urbano",
+			"Sigla": "SMDU"
+		},
+		"Sistema de projeção e datum (consulta)": "UTM/SIRGAS 2000",
+		"Sistema de projeção e datum (download arquivo vetorial ou matricial)": false,
+		"Periodicidade de atualização":"sob demanda",
+		"Seções": [
+			"http://localhost:3000/limites-administrativos@regiao-5",
+			"http://localhost:3000/limites-administrativos@distritos",
+			"http://localhost:3000/limites-administrativos@municipios-rmsp",
+			"http://localhost:3000/limites-administrativos@prefeituras-regionais"
 		]
 	},
 	"limites-administrativos@regiao-5": {
-		"SAD69": "http://localhost:3000/arquivos/0"
+		"id": 2,
+		"csv": "http://localhost:3000/arquivos/1",
+		"xlsx": "http://localhost:3000/arquivos/2",
+		"sirgas": "http://localhost:3000/arquivos/3",
+		"sad6996": "http://localhost:3000/arquivos/4"
 	},
+	"limites-administrativos@distritos": {
+		"id": 3,
+		"Resumo": "Os distritos foram criados mediante a Lei nº 11.220/1992. Seus limites foram estabelecidos a partir de estudos elaborados por diversos órgãos do Executivo municipal, tendo em conta fatores físico-territoriais, demográficos, urbanísticos, econômicos e político-administrativos",
+		"Escala":"1:1.000 e 1:5.000",
+		"Data de referencia":"2014",
+		"Responsável": {
+			"Nome": "Secretaria Municipal de Desenvolvimento Urbano",
+			"Sigla": "SMDU"
+		},
+		"Sistema de projeção e datum (consulta)": "UTM/SIRGAS 2000",
+		"Sistema de projeção e datum (download arquivo vetorial ou matricial)": "UTM/SIRGAS 2000",
+		"Periodicidade de atualização":"sob demanda",
+		"Arquivos": {
+			"dxf": "http://localhost:3000/arquivos/5",
+			"kmz": "http://localhost:3000/arquivos/6",
+			"sirgas": "http://localhost:3000/arquivos/7",
+			"sad6996": "http://localhost:3000/arquivos/8"
+		}
+	},
+	"limites-administrativos@municipios-rmsp": {
+		"id": 4,
+		"Resumo": "Extensão da capital paulista, a Região Metropolitana de São Paulo é composta por 39 municípios formando uma mancha urbana contínua.",
+		"Escala":"1:5.000",
+		"Data de referencia":"2014",
+		"Responsável": {
+			"Nome": "Prefeitura Municipal de São Paulo",
+			"Sigla": "PMSP"
+		},
+		"Sistema de projeção e datum (consulta)": "UTM/SIRGAS 2000",
+		"Sistema de projeção e datum (download arquivo vetorial ou matricial)": false,
+		"Periodicidade de atualização":"sob demanda",
+		"Arquivos":{
+			"sirgas": "http://localhost:3000/arquivos/9",
+			"sad6996": "http://localhost:3000/arquivos/10"
+		}
+	},
+
+	"limites-administrativos@regiao-8": {
+		"id": 5,
+		"csv": "http://localhost:3000/arquivos/11",
+		"xlsx": "http://localhost:3000/arquivos/12",
+		"sirgas": "http://localhost:3000/arquivos/13",
+		"sad6996": "http://localhost:3000/arquivos/14"
+	},
+
+	"limites-administrativos@prefeituras-regionais": {
+		"id": 6,
+		"Resumo": "As subprefeituras foram criadas mediante a Lei nº 13.339/2002. Seus limites foram estabelecidos de forma a não comprometer a  divisão distrital do município, permitindo assim a agregação de dados também para cada uma dessas unidades político-administrativas. Em 2017, as Subprefeituras passam a ser denominadas 'Prefeituras Regionais'",
+		"Escala":"1:1.000 e 1:5.000",
+		"Data de referencia":"2011",
+		"Responsável": {
+			"Nome": "Secretaria Municipal de Desenvolvimento Urbano",
+			"Sigla": "SMDU"
+		},
+		"Sistema de projeção e datum (consulta)": "UTM/SIRGAS 2000",
+		"Sistema de projeção e datum (download arquivo vetorial ou matricial)": "UTM/SIRGAS 2000",
+		"Periodicidade de atualização":"sob demanda",
+		"Arquivos":{
+			"sirgas": "http://localhost:3000/arquivos/15",
+			"sad6996": "http://localhost:3000/arquivos/16"
+		}
+	},
+
 	"arquivos": [
 		{
-		"id": 0,
-		"fonte": "http://localhost:3000/arquivos/0",
-		"versao": "2016.05.v0.1.0",
-		"nome": "Limites Admnistrativos",
-		"secao": "Região 5",
-		"autor": "PMSP",
-		"data": "2016-05-05",
-		"url": "https://s3-sa-east-1.amazonaws.com/api-geosampa/REGIAO5%402016.05.v0.1.0.zip"
+			"id": 1,
+			"Versão": "0.1.0",
+			"Extensão": "csv",
+			"Origem": "http://localhost:3000/limites-administrativos@regiao-5",
+			"Título": "Região 5",
+			"Autor": "PMSP/DEINFO",
+			"Data": "2013-01-01",
+			"Url": "https://s3-sa-east-1.amazonaws.com/api-geosampa/limites-adminitrativos_regiao5_0.1.0_dicionario-csv.zip"
+		},
+		{
+			"id": 2,
+			"Versão": "0.1.0",
+			"Extensão": "xlsx",
+			"Origem": "http://localhost:3000/limites-administrativos@regiao-5",
+			"Título": "Região 5",
+			"Autor": "PMSP/DEINFO",
+			"Data": "2013-01-01",
+			"url": "https://s3-sa-east-1.amazonaws.com/api-geosampa/limites-adminitrativos_regiao5_0.1.0_dicionario-xlsx.zip"
+		},
+		{
+			"id": 3,
+			"Versão": "0.1.0",
+			"Datum": "sirgas",
+			"Extensão": "shp",
+			"Origem": "http://localhost:3000/limites-administrativos@regiao-5",
+			"Título": "Região 5",
+			"Autor": "PMSP/DEINFO",
+			"Data": "2013-01-01",
+			"url": "https://s3-sa-east-1.amazonaws.com/api-geosampa/limites-adminitrativos_regiao5_0.1.0_shp-sirgas.zip"
+		},
+		{
+			"id": 4,
+			"Versao": "0.1.0",
+			"Datum": "sad6996",
+			"Extensao": "shp",
+			"Origem": "http://localhost:3000/limites-administrativos@regiao-5",
+			"Título": "Região 5",
+			"Autor": "PMSP/DEINFO",
+			"Data": "2013-01-01",
+			"url": "https://s3-sa-east-1.amazonaws.com/api-geosampa/limites-adminitrativos_regiao5_0.1.0_shp-sad6996.zip"
+		},
+		{
+			"id": 5,
+			"Versao": "0.1.0",
+			"Datum": "sad6996",
+			"Extensao": "dxf",
+			"Origem": "http://localhost:3000/limites-administrativos@regiao-5",
+			"Título": "Distritos",
+			"Autor": "PMSP/SMUL",
+			"Data": "2011-01-01",
+			"url": "https://s3-sa-east-1.amazonaws.com/api-geosampa/limites-adminitrativos_distritos_0.1.0_dxf-sad6996.zip"
+		},
+		{
+			"id": 6,
+			"Versao": "0.1.0",
+			"Datum": "WGS84",
+			"Extensao": "kmz",
+			"Origem": "http://localhost:3000/limites-administrativos@regiao-5",
+			"Título": "Distritos",
+			"Autor": "PMSP/SMUL",
+			"Data": "2011-01-01",
+			"url": "https://s3-sa-east-1.amazonaws.com/api-geosampa/limites-adminitrativos_distritos_0.1.0_kmz-WGS84.zip"
+		},
+		{
+			"id": 7,
+			"Versao": "0.1.0",
+			"Datum": "sad6996",
+			"Extensao": "shp",
+			"Origem": "http://localhost:3000/limites-administrativos@distritos",
+			"Título": "Distritos",
+			"Autor": "PMSP/SMUL",
+			"Data": "2011-01-01",
+			"url": "https://s3-sa-east-1.amazonaws.com/api-geosampa/limites-adminitrativos_distritos_0.1.0_shp-sad6996.zip"
+		},
+		{
+			"id": 8,
+			"Versao": "0.1.0",
+			"Projeção": "sirgas",
+			"Extensao": "shp",
+			"Origem": "http://localhost:3000/limites-administrativos@distritos",
+			"Título": "Distritos",
+			"Autor": "PMSP/SMUL",
+			"Data": "2011-01-01",
+			"url": "https://s3-sa-east-1.amazonaws.com/api-geosampa/limites-adminitrativos_distritos_0.1.0_shp-sirgas.zip"
+		},
+
+		{
+			"id": 9,
+			"Versao": "0.1.0",
+			"Datum": "sad6996",
+			"Projeção": "UTM (Fuso 23 ou MC -45)",
+			"Extensao": "shp",
+			"Origem":"http://localhost:3000/limites-administrativos@limites-municipais",
+			"Título": "Limites municipais",
+			"Autor": "PMSP/SMUL",
+			"Fonte dos dados": "IBGE - O limite Municipal de São Paulo foi ajustado (maio 2017) pela PRODAM para compatibilizar com uma escala maior.",
+			"Data": "2014-01-01",
+			"url": "https://s3-sa-east-1.amazonaws.com/api-geosampa/limites-adminitrativos_limites-municipais_0.1.0_shp-sad669.zip"
+		},
+		{
+			"id": 10,
+			"Versao": "0.1.0",
+			"Datum": "sirgas",
+			"Projeção": "UTM (Fuso 23 ou MC -45)",
+			"Extensao": "shp",
+			"Origem": "http://localhost:3000/limites-administrativos@limites-municipais",
+			"Título": "Limites municipais",
+			"Autor": "PMSP/SMUL",
+			"Fonte dos dados": "IBGE - O limite Municipal de São Paulo foi ajustado (maio 2017) pela PRODAM para compatibilizar com uma escala maior.",
+			"Data": "2014-01-01",
+			"url": "https://s3-sa-east-1.amazonaws.com/api-geosampa/limites-adminitrativos_limites-municipais_0.1.0_shp-sirgas.zip"
+		},
+
+		{
+			"id": 11,
+			"Versão": "0.1.0",
+			"Extensão": "csv",
+			"Origem": "http://localhost:3000/limites-administrativos@regiao-8",
+			"Título": "Região 8",
+			"Autor": "PMSP/DEINFO",
+			"Data": "2013-01-01",
+			"Url": "https://s3-sa-east-1.amazonaws.com/api-geosampa/limites-adminitrativos_regiao8_0.1.0_dicionario-csv.zip"
+		},
+		{
+			"id": 12,
+			"Versão": "0.1.0",
+			"Extensão": "xlsx",
+			"Origem": "http://localhost:3000/limites-administrativos@regiao-8",
+			"Título": "Região 8",
+			"Autor": "PMSP/DEINFO",
+			"Data": "2013-01-01",
+			"url": "https://s3-sa-east-1.amazonaws.com/api-geosampa/limites-adminitrativos_regiao8_0.1.0_dicionario-xlsx.zip"
+		},
+		{
+			"id": 13,
+			"Versão": "0.1.0",
+			"Datum": "sirgas",
+			"Extensão": "shp",
+			"Origem": "http://localhost:3000/limites-administrativos@regiao-8",
+			"Título": "Região 8",
+			"Autor": "PMSP/DEINFO",
+			"Data": "2013-01-01",
+			"url": "https://s3-sa-east-1.amazonaws.com/api-geosampa/limites-adminitrativos_regiao8_0.1.0_shp-sirgas.zip"
+		},
+		{
+			"id": 14,
+			"Versao": "0.1.0",
+			"Datum": "sad6996",
+			"Extensao": "shp",
+			"Origem": "http://localhost:3000/limites-administrativos@regiao-8",
+			"Título": "Região 8",
+			"Autor": "PMSP/DEINFO",
+			"Data": "2013-01-01",
+			"url": "https://s3-sa-east-1.amazonaws.com/api-geosampa/limites-adminitrativos_regiao8_0.1.0_shp-sad6996.zip"
+		},
+		{
+			"id": 15,
+			"Versao": "0.1.0",
+			"Datum": "sad6996",
+			"Extensao": "shp",
+			"Origem":"http://localhost:3000/limites-administrativos@prefeituras-regionais",
+			"Título": "Prefeituras Regionais",
+			"Autor": "PMSP/SMDU",
+			"Data": "2011-01-01",
+			"url": "https://s3-sa-east-1.amazonaws.com/api-geosampa/limites-adminitrativos_prefeituras-regionais_0.1.0_shp-sad669.zip"
+		},
+		{
+			"id": 16,
+			"Versao": "0.1.0",
+			"Datum": "sirgas",
+			"Extensao": "shp",
+			"Origem": "http://localhost:3000/limites-administrativos@prefeituras-regionais",
+			"Título": "Limites municipais",
+			"Autor": "PMSP/SMUL",
+			"Data": "2011-01-01",
+			"url": "https://s3-sa-east-1.amazonaws.com/api-geosampa/limites-adminitrativos_prefeituras-regionais_0.1.0_shp-sirgas.zip"
 		}
+
 	]
 }
