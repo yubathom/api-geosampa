@@ -17,8 +17,5 @@
 	"dependencies": {
 		"vuepress": "^0.14.10",
 		"json-server": "^0.12.1"
-	},
-	"devDependencies": {
-		"vuepress-plugin-demo-block": "^0.7.2"
 	}
 }
