@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /hero.png
+heroImage: /loga.svg
 actionText: Comece a usar →
 actionLink: /apresentacao.md
 features:

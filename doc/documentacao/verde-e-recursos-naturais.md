@@ -1,0 +1,1 @@
+verde e recursos naturais
