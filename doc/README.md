@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /loga.svg
+heroImage: https://s3-sa-east-1.amazonaws.com/api-geosampa/assets/apigeosampa.svg
 actionText: Comece a usar →
 actionLink: /apresentacao.md
 features:

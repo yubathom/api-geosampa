@@ -17,7 +17,7 @@ module.exports = {
           { text: 'Exemplos', 
             link: '/exemplos',
             items: [
-                { text: 'Integração com SEI', link: 'exemplos/sei' },
+                { text: 'Integração com SEI', link: 'exemplos/sistema-eletronico' },
                 { text: 'Integração com páginas web', link: '/exemplos/web' },
                 { text: 'Integração com intranet e redes', link: '/exemplos/intranet' },
                 { text: 'Rotina QGIS', link: '/exemplos/qgis' }, 
@@ -60,7 +60,7 @@ module.exports = {
                 title: 'Exemplos de uso',
                 collapsable: false,
                 children: [
-                    [ '/exemplos/sei', 'Integração com SEI' ],
+                    [ '/exemplos/sistema-eletronico', 'Integração com SEI' ],
                     [ '/exemplos/web', 'Integração com páginas web' ],
                     [ '/exemplos/intranet', 'Integração com intranet e redes' ],
                     [ '/exemplos/qgis', 'Rotina QGIS' ],
