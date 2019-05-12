@@ -7,6 +7,8 @@ meta:
 
 # Apresentação
 
+<!-- <CaceteDeAgulha msg="Cacete de agulha"/> -->
+
 Em ambientes de desenvolvimento de projetos urbanos, no contexto das empresas e secretarias municipais, dados do Geosampa podem ser acessados fornecidos pelo serviço WFS. 
 
 Porém, este modelo apresenta limitações de desempenho em aplicações GIS (QGIS e ArcGis). Por conta destas limitações, uma prática comum nas empresas municipais, é baixar manualmente os arquivos a partir do formulário disponibilizado no site. 

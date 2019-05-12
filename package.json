@@ -7,15 +7,18 @@
 		"doc": "doc"
 	},
 	"scripts": {
-		"docs:dev": "vuepress dev doc",
+		"docs:dev": "cross-env BASE_URL=http://localhost:3000/ vuepress dev doc",
 		"docs:build": "vuepress build doc",
 		"start": "vuepress build doc && node server.js",
-		"dev": "nodemon server.js"
+		"dev": "cross-env BASE_URL=http://localhost:3000/ nodemon server.js"
 	},
 	"author": "Thomas Yuba <yubathom@gmail.com>",
 	"license": "GPL-3.0-or-later",
 	"dependencies": {
 		"vuepress": "^0.14.10",
 		"json-server": "^0.12.1"
+	},
+	"devDependencies": {
+		"cross-env": "^5.2.0"
 	}
 }

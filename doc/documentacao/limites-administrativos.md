@@ -1,13 +1,15 @@
 # Limites administrativos
 Mapa base da divisão político-administrativa do Município de São Paulo, contendo prefeituras regionais, distritos, eixos de logradouros, quadras viárias e hidrografia do Mapa Digital da Cidade de São Paulo - MDC.
 
-## Exemplos 
+<!-- <CaceteDeAgulha msg="Cacete de agulha"/> -->
+
+## Exemplos
 
 ### Javascript
 Veja um exemplo de consumo da api com [fetch](https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API) e javascript.
 
 ```javascript
-var url = "https://api-geosampa.herokuapp.com/limites-administrativos"
+var url = "https://api-geosampa.herokuapp.com/v1/limites-administrativos"
 
 fetch(url)
   .then(function(resposta) {
@@ -32,7 +34,7 @@ pip install requests
 
 ```python
 import requests
-resposta = requests.get('https://api-geosampa.herokuapp.com/limites-administrativos')
+resposta = requests.get('https://api-geosampa.herokuapp.com/v1/limites-administrativos')
 print(resposta.text)
 ```
 
@@ -53,12 +55,9 @@ Nos dois exemplos acima a resposta esperada é o objeto no padrão abaixo:
   "Sistema de projeção e datum (consulta)": "UTM/SIRGAS 2000",
   "Sistema de projeção e datum (download arquivo vetorial ou matricial)": false,
   "Periodicidade de atualização": "sob demanda",
-  "Seções": [
-    "https://api-geosampa.herokuapp.com/limites-administrativos@regiao-5",
-    "https://api-geosampa.herokuapp.com/limites-administrativos@distritos",
-    "https://api-geosampa.herokuapp.com/limites-administrativos@municipios-rmsp",
-    "https://api-geosampa.herokuapp.com/limites-administrativos@prefeituras-regionais"
-  ]
+  "Seções": {
+    ...
+  }
 }
 ```
 

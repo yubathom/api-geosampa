@@ -1,5 +1,13 @@
-# Arquivos Geosampa
-Fornece por uma API REST as urls dos arquivos publicados no portal do Geosampa.
+<div align="center">
+	<a href="https://api-geosampa.herokuapp.com/">
+		<img style="max-width:180px" src="https://s3-sa-east-1.amazonaws.com/api-geosampa/assets/apigeosampa.png" alt="logo"/>
+		<h2 style="color:#0280F9; font-size: 3rem">{ API GeoSampa } </h2>
+	</a>
+</div>
+
+# Proposta
+Fornece por uma API REST as urls dos arquivos publicados no portal do [GeoSampa](http://geosampa.prefeitura.sp.gov.br/).
+Este site faz parte de proposta desenvolvida para a [Hackatona do GeoSampa](https://mundogeoconnect.com/2019/geosampa/).
 
 ### Instruções para montar localmente a aplicação
 1. Instalar dependências
@@ -7,11 +15,11 @@ Fornece por uma API REST as urls dos arquivos publicados no portal do Geosampa.
 npm i
 ```
 
-### Instruções para desenvolver a documentação. 
+### Instruções para desenvolver 
 
 1. Altere os markdowns do diretório `docs/`e altere as cofigurações de navegação do template em`docs/.vuepress/config.js`. 
 ```bash
-# Inicie a documentação em localhost:8080
+# Inicie o ambiente de desenvolvimento da documentação em localhost:8080
 npm run docs:dev
 
 # Altere/crie conteúdo editando os markdowns
@@ -27,15 +35,14 @@ npm run docs:dev
 npm run docs:build
 ```
 
-
 ## Instruções para desenvolver a API
 
-1. Iniciar a aplicação completa em `localhost:3000`
-```bash
-npm run start
-```
-
-2. Desenvolva a aplicação completa (requer instalação global de nodemon - `npm i -g nodemon`)
+* Desenvolva a aplicação (requer instalação global de nodemon - `npm i -g nodemon`)
 ```bash
 npm run dev
+```
+
+* Publique a documentação e inicie a aplicação completa em `localhost:3000`
+```bash
+npm run start
 ```
