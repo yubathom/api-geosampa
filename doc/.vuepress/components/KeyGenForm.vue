@@ -1,5 +1,6 @@
 <<template>
 	<div class='KeyGenForm'>
+		<ClientOnly>
 		<p v-if="!display">Para consumir a api é necessário criar uma chave. Inclua o seu email para criar a chave:</p>
 		<form>
 			<div v-if="error && !display" class='danger custom-block'>
@@ -10,7 +11,7 @@
 			<p v-if="!display">
 				<label for="email">Email</label>
 				<input
-					:class="{fetching: fetching}"
+					:class="{ fetching: fetching }"
 					id="email"
 					v-model="email"
 					type="email"
@@ -34,6 +35,7 @@
 		</div>
 		<button @click="checkForm" v-if="!display && !fetching">Gerar chave</button>
 		<DefLoader v-if="fetching"></DefLoader>
+		</ClientOnly>
 	</div>
 </template>
 <script>
@@ -84,7 +86,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style>
 .KeyGenForm,  form > p {
 	display: flex;
 	flex-direction: column;
@@ -109,19 +111,20 @@ button{
 	transition: background-color 0.1s ease;
 	box-sizing: border-box;
 	border-bottom: 1px solid #0076d9;
-	&:hover{ 
-		background-color: #0d90ff; 
-		cursor: pointer;
-	}
 }
+button:hover{ 
+	background-color: #0d90ff; 
+	cursor: pointer;
+}
+
 
 #email {
 	padding: 0.5em;
 	font-size: 1em;
-	&.fething {
-		opacity: 0.5;
-		border-color: #f3f0f0;
-	}
+}
+#email.fething {
+	opacity: 0.5;
+	border-color: #f3f0f0;
 }
 	
 </style>

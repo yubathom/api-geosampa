@@ -22,7 +22,7 @@
 	}
 </script>
 
-<style lang="scss" scoped>
+<style>
 .lds-spinner {
 	align-self: center;
 	color: official;
