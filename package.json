@@ -9,7 +9,7 @@
 	"scripts": {
 		"docs:dev": "cross-env BASE_URL=http://localhost:3000/ vuepress dev doc",
 		"docs:build": "cross-env BASE_URL=https://api-geosampa.herokuapp.com/ vuepress build doc",
-		"start": "cross-env BASE_URL=https://api-geosampa.herokuapp.com/ vuepress build doc && node server.js",
+		"start": "vuepress build doc && node server.js",
 		"dev": "cross-env BASE_URL=http://localhost:3000/ nodemon server.js"
 	},
 	"author": "Thomas Yuba <yubathom@gmail.com>",
