@@ -1,6 +1,6 @@
 <div align="center">
 	<a href="https://api-geosampa.herokuapp.com/">
-		<img src="https://s3-sa-east-1.amazonaws.com/api-geosampa/assets/apigeosampa.svg" alt="logo" style="width:200px;"/>
+		<img src="https://s3-sa-east-1.amazonaws.com/api-geosampa/assets/apigeosampa.svg" alt="logo" style="max-width:200px;"/>
 		<h2 style="color:#0280F9; font-size: 3rem">{ API GeoSampa } </h2>
 	</a>
 </div>
