@@ -18,7 +18,6 @@ module.exports = {
 	"Periodicidade de atualização":"sob demanda",
 	"Seções": {
 		"Regiao 5": {
-			id:1,
 			"url":apiUrl + "limites-administrativos@regiao-5",
 			"Arquivos": {
 				"csv": apiUrl + "arquivos/1",
@@ -28,7 +27,6 @@ module.exports = {
 			}
 		},
 		"Distritos": {
-			id:2,
 			"url": apiUrl + "limites-administrativos@distritos",
 			"Resumo": "Os distritos foram criados mediante a Lei nº 11.220/1992. Seus limites foram estabelecidos a partir de estudos elaborados por diversos órgãos do Executivo municipal, tendo em conta fatores físico-territoriais, demográficos, urbanísticos, econômicos e político-administrativos",
 			"Escala":"1:1.000 e 1:5.000",
@@ -48,7 +46,6 @@ module.exports = {
 			}
 		},
 		"Municípios RMSP" : {
-			id:3,
 			"url": apiUrl + "limites-administrativos@municipios-rmsp",
 			"Resumo": "Extensão da capital paulista, a Região Metropolitana de São Paulo é composta por 39 municípios formando uma mancha urbana contínua.",
 			"Escala":"1:5.000",
@@ -66,7 +63,6 @@ module.exports = {
 			}
 		},
 		"Região 8": {
-			id:4,
 			"url": apiUrl + "limites-administrativos@regiao-8",
 			"csv": apiUrl + "arquivos/11",
 			"xlsx": apiUrl + "arquivos/12",
