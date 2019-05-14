@@ -160,5 +160,25 @@ module.exports = [
 		"Autor": "PMSP/SMUL",
 		"Data": "2011-03-01",
 		"url": "https://s3-sa-east-1.amazonaws.com/api-geosampa/limites-adminitrativos_prefeituras-regionais_0.1.0_shp-sirgas.zip"
+	},
+	{
+		"id": 17,
+		"Versão": "0.1.0",
+		"Datum": "sirgas",
+		"Extensão": "shp",
+		"Título": "PIU Setor Central",
+		"Autor": "PMSP/SPURB",
+		"Data": "2019-05-09",
+		"url": "https://s3-sa-east-1.amazonaws.com/api-geosampa/piu-setor-central_0.1.0_shp.zip"
+	},
+	{
+		"id": 18,
+		"Versão": "0.1.0",
+		"Datum": "sirgas",
+		"Extensão": "kml",
+		"Título": "PIU Setor Central",
+		"Autor": "PMSP/SPURB",
+		"Data": "2019-05-09",
+		"url": "https://s3-sa-east-1.amazonaws.com/api-geosampa/piu-setor-central_0.1.0_kml.zip"
 	}
 ]
