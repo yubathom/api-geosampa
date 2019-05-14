@@ -9,7 +9,7 @@ O endpoint foi criada com os dados fornecidos nesta url. Ou seja os dados foram 
 
 Criamos um serviço `/sei` com as mesmas funcionlidades do restante da API. Este serviço poderia realizar uma conexão com a fonte de dados do *SEI* e incrementar na resposta para o cliente um objeto ` { Geo } `, com uma coleção de arquivos geográficos associados. Desta forma:
 
-a url [/sei?Processo=7810.2018/0000071-8](https://api-geosampa.herokuapp.com//v1/sei?Processo=7810.2018/0000071-8)
+a url [/sei?Processo=7810.2018/0000071-8](https://api-geosampa.herokuapp.com/v1/sei?Processo=7810.2018/0000071-8)
 retornará:
 ```json
 [
