@@ -6,5 +6,6 @@ module.exports = {
 	endpoints: [
 		`${ apiUrl }limites-administrativos`,
 		`${ apiUrl }arquivos`,
+		`${ apiUrl }sei`,
 	],
 }
