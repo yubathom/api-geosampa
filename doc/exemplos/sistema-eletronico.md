@@ -51,5 +51,5 @@ Além da coleção `Geo.Arquivos`, há também o objeto `Geo.Coordenadas` que tr
 Criando um serviço que responda estes dados geográfico no mesmo objeto dos dados do SEI nos permite criar a seguinte renderização abaixo:
 
 ______
-
+(exemplo incompleto em desenvolvimento)
 <SeiMap />
