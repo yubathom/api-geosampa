@@ -1,0 +1,89 @@
+SQL
+010.034.1008-1
+
+R FREI CANECA, 627
+
+
+
+
+Carregando...
+ZONEAMENTO
+Sigla
+	
+Descrição
+	
+Perímetro
+	
+Legislação
+ZEU	ZONA EIXO DE ESTRUTURACAO DA TRANSFORMACAO URBANA	0000	L 16402/2016
+PA	PERÍMETRO DE QUALIFICAÇÃO AMBIENTAL	0005	L 16402/2016
+MA	MACROÁREA DE URBANIZAÇÃO CONSOLIDADA - MUC	0001	L 16050/2014
+de 1
+
+Carregando...
+PARÂMETROS DE OCUPAÇÃO – QUADRO 3 DA LEI Nº 16.402/2016
+Descricao
+	
+Valor
+ZONA DE USO (a)	ZEU
+COEFICIENTE DE APROVEITAMENTO MÍNIMO	0,50
+COEFICIENTE DE APROVEITAMENTO BÁSICO	1
+COEFICIENTE DE APROVEITAMENTO MÁXIMO (m)	4
+TAXA DE OCUPAÇÃO MÁXIMA - para lotes até 500 m²	0,85
+TAXA DE OCUPAÇÃO MÁXIMA - para lotes igual ou superior a 500 m²	0,70
+GABARITO DE ALTURA MÁXIMA (metros)	NA
+RECUO MÍNIMO - FRENTE (i)	NA
+RECUO MÍNIMO - FUNDOS E LATERAIS: Altura menor igual a 10m	NA
+RECUO MÍNIMO - FUNDOS E LATERAIS: Altura superior a 10m	3 (j)
+COTA PARTE MÁXIMA DE TERRENO POR UNIDADE (m²)	20
+de 1
+
+Carregando...
+NOTAS - QUADRO 3 DA LEI Nº 16.402/2016
+Zona
+	
+Nota
+ZEU	(a)Nas zonas inseridas na área de proteção e recuperação aos mananciais aplica-se a legislação estatual pertinente, quando mais restritiva, conforme § 2º do artigo 5º desta lei.
+(i)O recuo frontal será facultativo quando atendido o disposto nos artigos 67 ou 69 desta lei.
+(j)Os recuos laterais e de fundo para altura da edificação superior a 10m (dez metros) serão dispensados conforme disposições estabelecidas nos incisos II e III desta lei.
+(m )Para áreas contidas nos perímetros de incentivo ao desenvolvimento econômico Jacu-Pêssego e Cupecê, conforme Mapa 11 da Lei nº 16.050, de 31 de julho de 2014 - PDE, verificar disposições dos artigos 362 e 363 da referida lei quanto ao coeficiente de aproveitamento máximo e outorga onerosa de potencial construtivo adicional.
+de 1
+NA= Não se Aplica
+
+Carregando...
+QUOTA AMBIENTAL – QUADRO 3A DA LEI Nº 16.402/2016
+Descricao
+	
+Valor
+PERÍMETRO DE QUALIFICAÇÃO AMBIENTAL	PA 5
+TAXA DE PERMEABILIDADE: Lote ≤ 500m² (a) (b)	0,15
+TAXA DE PERMEABILIDADE: Lote > 500m² (a) (b)	0,25
+PONTUAÇÃO QA MÍNIMO: Lote > 500 e ≤ 1.000m²	0,29
+PONTUAÇÃO QA MÍNIMO: Lote > 1.000 e ≤ 2.500m²	0,37
+PONTUAÇÃO QA MÍNIMO: Lote > 2.500 e ≤ 5.000m²	0,46
+PONTUAÇÃO QA MÍNIMO: Lote > 5.000 e ≤ 10.000m²	0,50
+PONTUAÇÃO QA MÍNIMO: Lote > 10.000m²	0,57
+FATORES: Cobertura Vegetal (alfa)	0,4
+FATORES: Drenagem (beta)	0,6
+de 1
+
+Carregando...
+NOTAS - QUADRO 3A DA LEI Nº 16.402/2016
+Nota
+(a) Nos lotes inseridos em ZEPAM, ZPDSr, ZPDS, ZCOR, ZPR e ZER deverão ser aplicadas as seguintes taxas de permeabilidade mínima: 0,90, 0,70, 0,50, 0,30, 0,30 e 0,30, respectivamente, independente do tamanho do lote;
+(b) Quando a somatória da taxa de permeabilidade do Quadro 3A com a taxa de ocupação do Quadro 3 for superior à 1,0 (um inteiro), a taxa de permeabilidade deverá ser respeitada e a taxa de ocupação reduzida proporcionalmente;
+(c) O PA 13 corresponde às Macroáreas de Contenção Urbana e Uso Sustentável e de Preservação dos Ecossistemas Naturais, nas quais não se aplicam as exigências da Quota Ambiental.
+de 1
+NA= Não se Aplica
+
+
+Para verificar os demais quadros da Lei nº 16.402/16, acesse:
+http://gestaourbana.prefeitura.sp.gov.br/marco-regulatorio/zoneamento/arquivos/
+Quadro 2 – Percentuais de destinação de área pública
+Quadro 2A – Parâmetros de Parcelamento do Solo (dimensões de lote) por zona
+Quadro 2B – Parâmetros de Parcelamento do Solo (sistema viário)
+Quadro 4 – Usos Permitidos por Zona
+Quadro 4A – Condições de instalação por subcategoria de uso, grupos de atividade e usos específicos
+Quadro 4B – Parâmetros de Incomodidade por zona
+
+
