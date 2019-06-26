@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>icon.png</file>
+	<file>resources/icon.png</file>
+			<file>resources/spurbanismo-color-small.png</file>
+  </qresource>
+</RCC>
