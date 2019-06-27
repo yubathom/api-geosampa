@@ -7,7 +7,7 @@
 # This file should be included when you package your plugin.# Mandatory items:
 
 [general]
-name=GEOSAMPA api
+name=GEOSAMPA API
 qgisMinimumVersion=3.0
 description=Cria a conexão entre o Geosampa e o QGIS
 version=0.1
