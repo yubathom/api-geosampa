@@ -85,7 +85,7 @@ module.exports = {
 				"sirgas": apiUrl + "arquivos/15",
 				"sad6996": apiUrl + "arquivos/16"
 			}
-		},
-		"Arquivos": filterArquivos(arquivosIds, arquivosGlobal)
-	}
+		}
+	},
+	"Arquivos": filterArquivos(arquivosIds, arquivosGlobal)
 }

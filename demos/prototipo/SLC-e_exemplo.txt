@@ -1,0 +1,13 @@
+Nome do proprietário	BENEDITA APARECIDA STORANI E CASTRO
+Setor	010
+Quadra	034
+Lote	1008
+Situação	ATIVO
+Dígito SQL	1
+Condomínio	00
+Nome do Logradouro	R FREI CANECA
+Número da Porta	627
+Tipo de Uso	Garagem (exclusive em prédio em condomínio)
+Tipo do terreno	Normal
+Área do terreno	1185
+Área construída	930
