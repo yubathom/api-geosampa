@@ -1,6 +1,6 @@
 module.exports = {
 	title: '{ API GeoSampa }',
-	description: 'Modelo de distribuição de arquivos estáticos do GeoSampa',
+	description: 'Modelo de distribuição de arquivos e dados do GeoSampa',
 	locales: {
 		"/": {
 			lang: "pt-br",
@@ -23,7 +23,7 @@ module.exports = {
 				{ text: 'Integração com SEI', link: '/exemplos/sistema-eletronico' },
 				{ text: 'Integração com páginas web', link: '/exemplos/web' },
 				{ text: 'Integração com intranet e redes', link: '/exemplos/intranet' },
-				{ text: 'Rotina QGIS', link: '/exemplos/qgis' }, 
+				{ text: 'Integração QGIS', link: '/exemplos/qgis' }, 
 				{ text: 'Atualizações com python e pip', link: '/exemplos/pip' },
 				{ text: 'Atualizações com javascript e npm', link: '/exemplos/npm' }
 		] },

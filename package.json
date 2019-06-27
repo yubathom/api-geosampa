@@ -1,7 +1,7 @@
 {
 	"name": "api-geosampa",
 	"version": "1.0.0",
-	"description": "Protótipo de API de arquivos estáticos do portal Geosampa.",
+	"description": "Protótipo de API de arquivos e dados do portal Geosampa.",
 	"main": "index.js",
 	"directories": {
 		"doc": "doc"
